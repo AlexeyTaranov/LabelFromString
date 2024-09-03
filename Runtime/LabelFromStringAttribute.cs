@@ -1,8 +1,5 @@
 using UnityEngine;
 
-namespace DefaultNamespace
+public class LabelFromStringAttribute : PropertyAttribute
 {
-    public class LabelFromStringAttribute : PropertyAttribute
-    {
-    }
 }
