@@ -1,7 +1,18 @@
 {
-	"name": "LabelFromString.Editor",
-	"references":[ "GUID:5f304071514b0473a9596be24416e1de" ],
-	"includePlatforms": [
+    "name": "LabelFromString.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5f304071514b0473a9596be24416e1de"
+    ],
+    "includePlatforms": [
         "Editor"
-    	],
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }
