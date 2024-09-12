@@ -1,6 +1,6 @@
 {
   "name": "com.alexeytaranov.labelfromstring",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "displayName": "Label From String",
   "description": "Attribute for Inspector Editor Label",
   "unity": "2019.3",
