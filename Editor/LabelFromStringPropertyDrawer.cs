@@ -35,7 +35,7 @@ namespace LabelFromString.Editor
 
         private static object GetValueFromProperty(SerializedProperty property)
         {
-#if UNITY_2021_2_OR_NEWER
+#if UNITY_2022_1_OR_NEWER
             if (property.propertyType == SerializedPropertyType.ManagedReference)
             {
                 return property.managedReferenceValue;
