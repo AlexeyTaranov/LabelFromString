@@ -35,7 +35,7 @@ namespace LabelFromString.Editor
 
         private static object GetValueFromProperty(SerializedProperty property)
         {
-#if UNITY_2022_1_OR_NEWER
+#if UNITY_2021_1_OR_NEWER
             if (property.propertyType == SerializedPropertyType.ManagedReference)
             {
                 return property.managedReferenceValue;
@@ -46,12 +46,13 @@ namespace LabelFromString.Editor
                 return property.objectReferenceValue;
             }
 
+#if UNITY_2022_1_OR_NEWER
             if (property.propertyType == SerializedPropertyType.Generic)
             {
                 return property.boxedValue;
             }
-
-            return null;
+#endif
+            return property.GetTarget();
 #else
             return property.GetTarget();
 #endif
